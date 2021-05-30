@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Text to Speech Converter
+        </title>
+        <link rel="stylesheet" href="tts.css"> 
+        
+        <script src="tts.js"></script>
+    </head>
+    <body>
+        <h1 align="center" id="head">
+            Text to Speech Converter
+        </h1>
+        <div class="div" align="center">
+        <textarea id="texta" placeholder="Type here..." name="text" rows="15" cols="70"></textarea>
+        
+    </div>
+    <br>
+    
+    <div class="slider" align="center">
+        <span> volume <input type="range" id="volume" min="0" max="2" value="1" step="0.5"></span><span id="vol"></span>
+        <span>speed <input type="range" id="speed" min="0" max="2" value="1" step="0.5"></span> <span id="spe"></span>
+        <span>pitch <input type="range" id="pitch" min="0" max="1" value="0.5" step="0.5"></span> <span id="pit"></span>
+    </div>
+    <br>
+    <div class="buttons" align="center">
+        <span><button id="start" onclick="begin()">start</button></span>
+        <span><button id="pause" onclick="pause1()">pause</button></span>
+        <span><button id="resume" onclick="res()">resume</button></span>
+        <span><button id="cancel" onclick="can()">cancel</button></span>
+    </div>
+    
+    <p id="spark">powered by Spark Techies</p>
+    </body>
+</html>
